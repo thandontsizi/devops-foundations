@@ -1,55 +1,41 @@
-# Practical Tests: Linux Navigation and Inspection.
-These questions are meant to simulate what I think might be real workplace scenarios.
-Answers explain reasoning, not just commands.
+## Section 1: Basic Navigation:
+1. Without using 'cd', how do you confirm your current directory?
+2. What command shows all files including hidden ones?
+3. What is the difference between 'ls', 'ls -l', and 'ls -la'?
+4. How do you return to your home directory from anywhere?
+5. How do you move up exactly one directory level?
 
-## Test 1:
-### Scenario:
-You are about to delete files on a remote server.
-What command should you run first to confirm your location and why?
+## Section 2: Files and Directories:
+1. Create a directory called 'projects' and inside it create 'linux'.
+2. Create a file titled 'notes.txt' without opening an editor.
+3. Copy 'notes.txt' into another directory in one command.
+4. Rename 'notes.txt' to 'linux-notes.txt'.
+5. Delete a directory that contains files inside it.
 
-### Answer:
-I would run pwd to confirm my current working directory.
-Deleting files from the wrong directory on remote or production systems can cause data loss or service outages.
-Verifying the current path ensures that any destructive command is executed in the intended location only.
+## Section 3: Viewing Files.
+1. View the contents of a file without editing it.
+2. View a file page-by-page.
+3. Show only the first 10 lines of a file.
+4. Show only the last 10 lines of a file.
+5. Explain when you would use 'less' instead of 'cat'.
 
+## Section 4: Permissions.
+1. What does 'rwxr-xr--' mean?
+2. Change the file so that the only the owner can read and write it.
+3. Add execute permission to a script file.
+4. Remove write permission for group and others.
+5. Why is 'chmod 777' considered dangerous?
 
-## Test 2:
-### Scenario:
-You need to inspect the contents of a directory without entering it.
-Which command do you use, and what risk does it reduce?
+## Section 5: Redirection and Pipes.
+1. What is the difference between '>' and '>>'?
+2. Redirect the output of a command into a file.
+3. Append output to an existing file.
+4. Pipe the output of one command into another.
+5. Give an example of using '|' with 'grep'.
 
-### Answer:
-I would use ls /path/to/directory.
-This allows me to inspect files and directories without changing my working directory.
-It reduces the risk of running commands in the wrong location and helps avoid accidental changes to unrelated files.
-
-
-## Test 3:
-### Scenario:
-You join a new project with an unfamiliar directory structure.
-How can you quickly understand its layout?
-
-### Answer:
-I would use tree -L 2 to view the directory structure up to a limited depth.
-This provides a high-level overview of how the project is organised without overwhelming output, allowing me to understand where key files and directories are located.
-
-
-## Test 4:
-### Scenario:
-You are on a production server with no internet access and you encounter an unfamiliar command.
-How do you learn how to use the command safely?
-
-### Answer:
-I would use man "command" to read the manual page.
-The manual provides accurate information about what the command does, its options, and examples.
-This allows me to understand the commanf before using it and avoid unsafe flags or incorrect usage.
-
-
-## Test 5:
-### Scenario:
-Why is it dangerous to assume your current directory in operational environments?
-
-### Answer:
-Assuming the current directory can lead to runnung commands against the wrong files or systems.
-In operational environments +, many commands are directory-sensitive, and a small mistake can affect production data, configuration files, or running services.
-Verifying location reduces the risk of human error.
+## Section 6: Practical Scenarios.
+1. You are in the wrong directory. How do you confirm where you are and navigate to '/var/log'?
+2. A file has the wrong permissions and cannot be executed. How do you fix it?
+3. A directory should only be accessible by you. What permissions do you apply?
+4. A command outputs too much information. How do you search within that output?
+5. You need to save command output for later review. What do you do?
