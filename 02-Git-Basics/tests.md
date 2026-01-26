@@ -28,17 +28,17 @@
 5. Create a new branch called 'feature-x' and switch to it.
 
 ### Answers:
-1. ___
+1. _
 - git branch
-2. ___
+2. _
 - git add filename.extension
 - git commit -m "Commit message."
-3. ___
+3. _
 -  git reset --soft HEAD~1
-4. ___
+4. _
 - git log
 - git log --oneline (Optional)
-5. ___
+5. _
 - git checkout -b feature-x
 -------------------------
 
@@ -51,13 +51,13 @@
 5. How do you pull a specific branch from a remote?
 
 ### Answers:
-1. ___
+1. _
 - git remote add origin <repository-url>
-2. ___
+2. _
 - git pull
-3. ___
+3. _
 - Identify conflicting files, manually edit the conflict marker then add and commit the resolved files.
-4. ___
+4. _
 - git push origin branch-name
-5. ___
+5. _
 - git pull origin branch-name
