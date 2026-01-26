@@ -7,14 +7,14 @@
 3. Why is committing often better that committing once a month?
 
 ### Answers:
-1. ___
+1. _
 - Git is a distributed version control system used to track changes in source code locallyy.
 - GitHub is a cloud platform that hosts Git repositories and allows collacoration, backups, and code sharing.
-2. ___
+2. _
 - Working directory: where files are edited.
 - Staging Area: holds selected changes that are prepared for a commit.
 - Repository: stores committed snapshots of the project history.
-3. ___
+3. _
 - Frequent commits create a clear history, make debugging easier, and reduce the risk of losing work.
 - Large sparse commits are harder to review and revert because of the bulk.
 -------------------------------------------------------------------------
