@@ -7,16 +7,16 @@
 3. Why is committing often better that committing once a month?
 
 ### Answers:
-1. ---
-Git is a distributed version control system used to track changes in source code locallyy.
-GitHub is a cloud platform that hosts Git repositories and allows collacoration, backups, and code sharing.
-2. ---
-Working directory: where files are edited.
-Staging Area: holds selected changes that are prepared for a commit.
-Repository: stores committed snapshots of the project history.
-3. ---
-Frequent commits create a clear history, make debugging easier, and reduce the risk of losing work.
-Large sparse commits are harder to review and revert because of the bulk.
+1. ___
+- Git is a distributed version control system used to track changes in source code locallyy.
+- GitHub is a cloud platform that hosts Git repositories and allows collacoration, backups, and code sharing.
+2. ___
+- Working directory: where files are edited.
+- Staging Area: holds selected changes that are prepared for a commit.
+- Repository: stores committed snapshots of the project history.
+3. ___
+- Frequent commits create a clear history, make debugging easier, and reduce the risk of losing work.
+- Large sparse commits are harder to review and revert because of the bulk.
 -------------------------------------------------------------------------
 
 ### Section 2: Commands and Usage.
@@ -28,18 +28,18 @@ Large sparse commits are harder to review and revert because of the bulk.
 5. Create a new branch called 'feature-x' and switch to it.
 
 ### Answers:
-1. ---
-git branch
-2. ---
-git add filename.extension
-git commit -m "Commit message."
-3. ---
-git reset --soft HEAD~1
-4. ---
-git log
-git log --oneline (Optional)
-5. ---
-git checkout -b feature-x
+1. ___
+- git branch
+2. ___
+- git add filename.extension
+- git commit -m "Commit message."
+3. ___
+-  git reset --soft HEAD~1
+4. ___
+- git log
+- git log --oneline (Optional)
+5. ___
+- git checkout -b feature-x
 -------------------------
 
 ### Section 3: Collaboration.
@@ -51,13 +51,13 @@ git checkout -b feature-x
 5. How do you pull a specific branch from a remote?
 
 ### Answers:
-1. ---
-git remote add origin <repository-url>
-2. ---
-git pull
-3. ---
-Identify conflicting files, manually edit the conflict marker then add and commit the resolved files.
-4. ---
-git push origin branch-name
-5. ---
-git pull origin branch-name
+1. ___
+- git remote add origin <repository-url>
+2. ___
+- git pull
+3. ___
+- Identify conflicting files, manually edit the conflict marker then add and commit the resolved files.
+4. ___
+- git push origin branch-name
+5. ___
+- git pull origin branch-name
