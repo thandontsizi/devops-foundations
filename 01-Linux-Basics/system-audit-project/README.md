@@ -1,7 +1,8 @@
 # System Setup & Network Audit Project:
 ## Overview:
-This project documents a basic system audit performed on a Linux system.This project is part of the DevOps/Cloud Engineering Foundations learning path and combines Linux fundamentals, basic Git usage, and introductory networking concepts.
+This project is part of the DevOps/Cloud Engineering Foundations learning path and combines Linux fundamentals, basic Git usage, and introductory networking concepts.
 It is a foundational audit to build familiarity with how a Linux system is structured and how to verify its state using command-line tools.
+
 
 The goal is to collect, document, and verify essential system information in a clear and repeatable way.
 
