@@ -39,6 +39,7 @@
 - git log
 - git log --oneline (Optional)
 5. _
+- git branch feature-x
 - git checkout -b feature-x
 -------------------------
 
