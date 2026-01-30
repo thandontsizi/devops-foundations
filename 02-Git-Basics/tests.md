@@ -8,8 +8,8 @@
 
 ### Answers:
 1. _
-- Git is a distributed version control system used to track changes in source code locallyy.
-- GitHub is a cloud platform that hosts Git repositories and allows collacoration, backups, and code sharing.
+- Git is a distributed version control system used to track changes in source code locally.
+- GitHub is a cloud platform that hosts Git repositories and allows collaboration, backups, and code sharing.
 2. _
 - Working directory: where files are edited.
 - Staging Area: holds selected changes that are prepared for a commit.
@@ -39,6 +39,7 @@
 - git log
 - git log --oneline (Optional)
 5. _
+- git branch feature-x + git checkout feature-x
 - git checkout -b feature-x
 -------------------------
 
