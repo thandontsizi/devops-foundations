@@ -7,6 +7,7 @@ This document verifies that the processes and services tasks were completed usin
 - What I observed: A list of running processes with user, process ID (PID), CPU, and memoey usage.
 - Why it matters: It shows how the system manages and displays running programs.
 
+
 - Command: top
 - What I was verifying: Real-time process activity and resource usage.
 - What I observed: Processes updated live with changing memory and CPU usage.
