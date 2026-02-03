@@ -24,3 +24,13 @@ Each section matches the command reference for consistency and easy revision.
 ## Section 4: Practical Scenarios.
 4.1. You install Docker on a Linux system but when you run the command 'docker --version', the command is not found.
 What steps do you take to troubleshoot and fix the issue?
+4.2. You pull an image successfully but when you try to run it, the container exits immediately.
+What could cause this behaviour and how would you investigate it?
+4.3. A container is running but the application inside it is not responding.
+Which commands would you use to inspect the container and diagnose the problem?
+4.4. You want to test a Docker image without permanently keeping the container on your system.
+How would you run the container and ensure that it is autoomatically removed after stopping?
+4.5. Your system is running low on disk space and you suspect Docker is the cause.
+How would you identify unused images and containers and how would you clean the up safely?
+4.6. You run a container and it works correctly but when you stop it, all changes inside the container are lost.
+Why does this happen and how can it be prevented in a real-world setup?
