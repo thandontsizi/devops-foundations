@@ -8,7 +8,7 @@ This folder documents my learning of Docker fundamentals, including containeriza
 - Dockerfile: A text file that details or defines how an image is built.
 - Docker Engine: The service responsible for running containers.
 
-## What I Learned:
+## What I Will Learn:
 - How Docker differs from virtual machines.
 - How images and containers relate to each other.
 - Basic container lifecycle commands.
