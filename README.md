@@ -5,7 +5,7 @@ This repository documents my hands on learning across Linux, Git, Networking, Do
 It contains structured practice, commands, small system-level exercises, and experimental projects. The goal is to build strong foundations through repetition and real command-line work. 
 This is a learning repository. It is not intended to be a polished portfolio.
 
-For recruiter-facing, production-style projects, see this repository: "https://github.com/thandontsizi/cloud-and-automation-portfolio.git"
+For recruiter-facing production-style projects, see this repository: "https://github.com/thandontsizi/cloud-and-automation-portfolio.git"
 
 
 ## How to Use This Repository:
