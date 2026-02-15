@@ -19,10 +19,10 @@ All commands are written in general form and can be adapted inside scripts.
 ## 2. Running and Managing Scripts:
 - Command: chmod +x script.sh
 - Explanation: Makes a script executable.
-
+-----------------------------------------
 - Command: ./script.sh
 - Explanation: Runs a script from the current directory.
-
+--------------------------------------------------------
 - Command: bash script.sh
 - Explanation: Runs a script explicitly using Bash.
 
@@ -30,60 +30,63 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 3. Variables:
 - Command: VAR=value
-- Syntax: 
--	 NAME="Thando"
 - Explanation: Creates a variable.
-
+- Syntax: 
+-	 	NAME="Thando"
+----------------------------------
 - Command: echo "$VAR"
-- Syntax: 
--	 echo "$NAME"
 - Explanation: Prints a variable value.
-
-- Command: export VAR=value
 - Syntax: 
--	 export ENVIRONMENT="production"
+-	 	echo "$NAME"
+---------------------------------------
+- Command: export VAR=value
 - Explanation: Makes variable available to child processes.
+- Syntax: 
+-	 	export ENVIRONMENT="production"
 
 -----------------------------------------------------------
 
 ## 4. Command Substitution:
 - Command: $ (command)
-- Syntax: 
--	 current_date=$(date)
 - Explanation: Captures output of a command into a variable.
+- Syntax: 
+-	 	current_date=$(date)
 
 ------------------------------------------------------------
 
 ## 5. Input/Output Redirection:
 - Command: >
-- Syntax: 
--	 command > file.txt
 - Explanation: Redirect output (overwrite).
-
+- Syntax: 
+-	 	command > file.txt
+-------------------------------------------
 - Command: >>
-- Syntax: 
--	 command >> file.txt
 - Explanation: Redirect output (append).
-
+- Syntax: 
+-	 	command >> file.txt
+----------------------------------------
 - Command: 2>
-- Syntax: 
--	 command 2> errors.txt
 - Explanation: Redirect error output.
-
-- Command: |
 - Syntax: 
--	 ps aux | head
+-	 	command 2> errors.txt
+-------------------------------------
+- Command: |
 - Explanation: Pipe output of one command into another.
+- Syntax: 
+-	 	ps aux | head
 
 --------------------------------------------------------
 
 ## 6. Conditionals:
 - Command: if [ condition ]
-- syntax: 
--		if [ -f file.txt ]; then
--			echo "File exists"
--		fi
 - Explanation: Tests a condition.
+- syntax:
+<pre>
+	if [ -f file.txt ]; then
+		echo "File exists"
+	fi
+</pre>
+
 - Common Tests:
 	- '-f' -> file exists.
 	- '-d' -> directory exists.
@@ -95,45 +98,54 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 7. Loops:
 - Command: for
-- Syntax: 
--	  for user in user1 user2 user3; do
--		echo "$user"
--	  done
 - Explanation: Iterates over a list.
-
-
+- Syntax:
+<pre>
+	for user in user1 user2 user3; do
+		echo "$user"
+	done
+</pre>
+------------------------------------
 - Command: while
-- Syntax: 
--	  while read line; do
-- 		echo "$line"
--	  done < file.txt
 - Explanation: Executes while condition is true.
+- Syntax: 
+<pre>
+	while read line; do
+		echo "$line"
+	done < file.txt
+</pre>
 
 ------------------------------------------------
 
 ## 8. Functions:
 - Command: function_name()
-- Syntax: 
--	  log_info() {
--		echo "[INFO] $1"
--	  }
+- Syntax:
+<pre>
+	log_info() 
+	{
+		echo "[INFO] $1"
+	}
+</pre>
 
 --------------------------------
 
 ## 9. Arguments:
 - Command: $1, $2 $@
-- Syntax: 
--	 username="$1"
 - Explanation: Access script arguments.
-
-
-- Command: $#
 - Syntax: 
--	  if [ "$#" -ne 1 ]; then
--		echo "Usage: ./script.sh <username>"
--		exit 1
--	  fi
+<pre>
+	username="$1"
+</pre>
+---------------------------------------
+- Command: $#
 - Explanation: Number of arguments passed.
+- Syntax: 
+<pre>
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: ./script.sh <username>"
+		exit 1
+	fi
+</pre>
 
 ------------------------------------------
 
