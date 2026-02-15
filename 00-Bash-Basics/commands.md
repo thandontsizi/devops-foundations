@@ -19,10 +19,10 @@ All commands are written in general form and can be adapted inside scripts.
 ## 2. Running and Managing Scripts:
 - Command: chmod +x script.sh
 - Explanation: Makes a script executable.
-
+-----------------------------------------
 - Command: ./script.sh
 - Explanation: Runs a script from the current directory.
-
+--------------------------------------------------------
 - Command: bash script.sh
 - Explanation: Runs a script explicitly using Bash.
 
@@ -33,12 +33,12 @@ All commands are written in general form and can be adapted inside scripts.
 - Syntax: 
 -	 	NAME="Thando"
 - Explanation: Creates a variable.
-
+----------------------------------
 - Command: echo "$VAR"
 - Syntax: 
 -	 	echo "$NAME"
 - Explanation: Prints a variable value.
-
+---------------------------------------
 - Command: export VAR=value
 - Syntax: 
 -	 	export ENVIRONMENT="production"
@@ -59,17 +59,17 @@ All commands are written in general form and can be adapted inside scripts.
 - Syntax: 
 -	 	command > file.txt
 - Explanation: Redirect output (overwrite).
-
+-------------------------------------------
 - Command: >>
 - Syntax: 
 -	 	command >> file.txt
 - Explanation: Redirect output (append).
-
+----------------------------------------
 - Command: 2>
 - Syntax: 
 -	 	command 2> errors.txt
 - Explanation: Redirect error output.
-
+-------------------------------------
 - Command: |
 - Syntax: 
 -	 	ps aux | head
@@ -79,10 +79,13 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 6. Conditionals:
 - Command: if [ condition ]
-- syntax: 
--		if [ -f file.txt ]; then
--			echo "File exists"
--		fi
+- syntax:
+- <pre>
+if [ -f file.txt ]; then
+	echo "File exists"
+fi	
+</pre>
+
 - Explanation: Tests a condition.
 - Common Tests:
 	- '-f' -> file exists.
@@ -97,44 +100,51 @@ All commands are written in general form and can be adapted inside scripts.
 - Command: for
 - Syntax:
 <pre>
-for user in user1 user2 user3; do
-	echo "$user"
-done
+	for user in user1 user2 user3; do
+		echo "$user"
+	done
 </pre>
 - Explanation: Iterates over a list.
-
-
+------------------------------------
 - Command: while
 - Syntax: 
--	  while read line; do
-- 		echo "$line"
--	  done < file.txt
+<pre>
+	while read line; do
+		echo "$line"
+	done < file.txt
+</pre>
 - Explanation: Executes while condition is true.
 
 ------------------------------------------------
 
 ## 8. Functions:
 - Command: function_name()
-- Syntax: 
--	  log_info() {
--		echo "[INFO] $1"
--	  }
+- Syntax:
+<pre>
+	log_info() 
+	{
+		echo "[INFO] $1"
+	}
+</pre>
 
 --------------------------------
 
 ## 9. Arguments:
 - Command: $1, $2 $@
 - Syntax: 
--	 username="$1"
+<pre>
+	username="$1"
+</pre>
 - Explanation: Access script arguments.
-
-
+---------------------------------------
 - Command: $#
 - Syntax: 
--	  if [ "$#" -ne 1 ]; then
--		echo "Usage: ./script.sh <username>"
--		exit 1
--	  fi
+<pre>
+	if [ "$#" -ne 1 ]; then
+		echo "Usage: ./script.sh <username>"
+		exit 1
+	fi
+</pre>
 - Explanation: Number of arguments passed.
 
 ------------------------------------------
