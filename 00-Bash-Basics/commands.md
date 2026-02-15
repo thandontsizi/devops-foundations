@@ -80,10 +80,10 @@ All commands are written in general form and can be adapted inside scripts.
 ## 6. Conditionals:
 - Command: if [ condition ]
 - syntax:
-- <pre>
-if [ -f file.txt ]; then
-	echo "File exists"
-fi	
+<pre>
+	if [ -f file.txt ]; then
+		echo "File exists"
+	fi	
 </pre>
 
 - Explanation: Tests a condition.
