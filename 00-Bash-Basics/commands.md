@@ -30,70 +30,81 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 3. Variables:
 - Command: VAR=value
-- Syntax: NAME="Thando"
+- Syntax: 
+-	 NAME="Thando"
 - Explanation: Creates a variable.
 
 - Command: echo "$VAR"
-- Syntax: echo "$NAME"
+- Syntax: 
+-	 echo "$NAME"
 - Explanation: Prints a variable value.
 
 - Command: export VAR=value
-- Syntax: export ENVIRONMENT="production"
+- Syntax: 
+-	 export ENVIRONMENT="production"
 - Explanation: Makes variable available to child processes.
 
 -----------------------------------------------------------
 
 ## 4. Command Substitution:
 - Command: $ (command)
-- Syntax: current_date=$(date)
+- Syntax: 
+-	 current_date=$(date)
 - Explanation: Captures output of a command into a variable.
 
 ------------------------------------------------------------
 
 ## 5. Input/Output Redirection:
 - Command: >
-- Syntax: command > file.txt
+- Syntax: 
+-	 command > file.txt
 - Explanation: Redirect output (overwrite).
 
 - Command: >>
-- Syntax: command >> file.txt
+- Syntax: 
+-	 command >> file.txt
 - Explanation: Redirect output (append).
 
 - Command: 2>
-- Syntax: command 2> errors.txt
+- Syntax: 
+-	 command 2> errors.txt
 - Explanation: Redirect error output.
 
 - Command: |
-- Syntax: ps aux | head
+- Syntax: 
+-	 ps aux | head
 - Explanation: Pipe output of one command into another.
 
 --------------------------------------------------------
 
 ## 6. Conditionals:
 - Command: if [ condition ]
-- syntax: if [ -f file.txt ]; then
-- 		echo "File exists"
--         fi
+- syntax: 
+-	 if [ -f file.txt ]; then
+-	     echo "File exists"
+-        fi
 - Explanation: Tests a condition.
 - Common Tests:
-- '-f' -> file exists.
-- '-d' -> directory exists.
-- '-x' -> executable file.
-- '-z' -> string is empty.
-- '-n' -> string is not empty.
+	- '-f' -> file exists.
+	- '-d' -> directory exists.
+	- '-x' -> executable file.
+	- '-z' -> string is empty.
+	- '-n' -> string is not empty.
 
 ------------------------------
 
 ## 7. Loops:
 - Command: for
-- Syntax: for user in user1 user2 user3; do
+- Syntax: 
+-	  for user in user1 user2 user3; do
 -		echo "$user"
 -	  done
 - Explanation: Iterates over a list.
 
 
 - Command: while
-- Syntax: while read line; do
+- Syntax: 
+-	  while read line; do
 - 		echo "$line"
 -	  done < file.txt
 - Explanation: Executes while condition is true.
@@ -102,7 +113,8 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 8. Functions:
 - Command: function_name()
-- Syntax: log_info() {
+- Syntax: 
+-	  log_info() {
 -		echo "[INFO] $1"
 -	  }
 
@@ -110,12 +122,14 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 9. Arguments:
 - Command: $1, $2 $@
-- Syntax: username="$1"
+- Syntax: 
+-	 username="$1"
 - Explanation: Access script arguments.
 
 
 - Command: $#
-- Syntax: if [ "$#" -ne 1 ]; then
+- Syntax: 
+-	  if [ "$#" -ne 1 ]; then
 -		echo "Usage: ./script.sh <username>"
 -		exit 1
 -	  fi
