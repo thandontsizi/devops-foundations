@@ -30,63 +30,63 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 3. Variables:
 - Command: VAR=value
+- Explanation: Creates a variable.
 - Syntax: 
 -	 	NAME="Thando"
-- Explanation: Creates a variable.
 ----------------------------------
 - Command: echo "$VAR"
+- Explanation: Prints a variable value.
 - Syntax: 
 -	 	echo "$NAME"
-- Explanation: Prints a variable value.
 ---------------------------------------
 - Command: export VAR=value
+- Explanation: Makes variable available to child processes.
 - Syntax: 
 -	 	export ENVIRONMENT="production"
-- Explanation: Makes variable available to child processes.
 
 -----------------------------------------------------------
 
 ## 4. Command Substitution:
 - Command: $ (command)
+- Explanation: Captures output of a command into a variable.
 - Syntax: 
 -	 	current_date=$(date)
-- Explanation: Captures output of a command into a variable.
 
 ------------------------------------------------------------
 
 ## 5. Input/Output Redirection:
 - Command: >
+- Explanation: Redirect output (overwrite).
 - Syntax: 
 -	 	command > file.txt
-- Explanation: Redirect output (overwrite).
 -------------------------------------------
 - Command: >>
+- Explanation: Redirect output (append).
 - Syntax: 
 -	 	command >> file.txt
-- Explanation: Redirect output (append).
 ----------------------------------------
 - Command: 2>
+- Explanation: Redirect error output.
 - Syntax: 
 -	 	command 2> errors.txt
-- Explanation: Redirect error output.
 -------------------------------------
 - Command: |
+- Explanation: Pipe output of one command into another.
 - Syntax: 
 -	 	ps aux | head
-- Explanation: Pipe output of one command into another.
 
 --------------------------------------------------------
 
 ## 6. Conditionals:
 - Command: if [ condition ]
+- Explanation: Tests a condition.
 - syntax:
 <pre>
 	if [ -f file.txt ]; then
 		echo "File exists"
-	fi	
+	fi
 </pre>
 
-- Explanation: Tests a condition.
 - Common Tests:
 	- '-f' -> file exists.
 	- '-d' -> directory exists.
@@ -98,22 +98,22 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 7. Loops:
 - Command: for
+- Explanation: Iterates over a list.
 - Syntax:
 <pre>
 	for user in user1 user2 user3; do
 		echo "$user"
 	done
 </pre>
-- Explanation: Iterates over a list.
 ------------------------------------
 - Command: while
+- Explanation: Executes while condition is true.
 - Syntax: 
 <pre>
 	while read line; do
 		echo "$line"
 	done < file.txt
 </pre>
-- Explanation: Executes while condition is true.
 
 ------------------------------------------------
 
@@ -131,13 +131,14 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 9. Arguments:
 - Command: $1, $2 $@
+- Explanation: Access script arguments.
 - Syntax: 
 <pre>
 	username="$1"
 </pre>
-- Explanation: Access script arguments.
 ---------------------------------------
 - Command: $#
+- Explanation: Number of arguments passed.
 - Syntax: 
 <pre>
 	if [ "$#" -ne 1 ]; then
@@ -145,7 +146,6 @@ All commands are written in general form and can be adapted inside scripts.
 		exit 1
 	fi
 </pre>
-- Explanation: Number of arguments passed.
 
 ------------------------------------------
 
