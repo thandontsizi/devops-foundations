@@ -139,12 +139,36 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 10. System Health Reporting Commands:
 Used inside reporting scripts:
-- hostname
-- whoami
-- date
-- uptime
-- df -h
-- free -h
-- ps aux --sort=-%cpu | head
-- systemctl --failed
-- journalctl -p err -n 20
+	- hostname
+	- whoami
+	- date
+	- uptime
+	- df -h
+	- free -h
+	- ps aux --sort=-%cpu | head
+	- systemctl --failed
+	- journalctl -p err -n 20
+
+- Report filename pattern:
+<pre>
+	report_file="system_report_$(date +%F_%H-%M-%S).txt"
+</pre>
+
+------------------------------------------------------------
+
+## 11. User Provisioning Building Blocks (Ubuntu/Debian):
+### Common commands:
+- Check if user exists: id <username>
+- Add a sudo user: sudo adduser <username>
+- Add a user to a group: sudo usermod -aG <group> <username>
+- Change a user's password: sudo passwd <username>
+- Show group info: getent group <group>
+
+### Existence Check Pattern:
+<pre>
+	if id "$username" &>/dev/null; then
+		echo "User exists."
+	else
+		sudo adduser "$username"
+	fi
+</pre>
