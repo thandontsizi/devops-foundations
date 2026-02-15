@@ -31,17 +31,17 @@ All commands are written in general form and can be adapted inside scripts.
 ## 3. Variables:
 - Command: VAR=value
 - Syntax: 
--	 NAME="Thando"
+-	 	NAME="Thando"
 - Explanation: Creates a variable.
 
 - Command: echo "$VAR"
 - Syntax: 
--	 echo "$NAME"
+-	 	echo "$NAME"
 - Explanation: Prints a variable value.
 
 - Command: export VAR=value
 - Syntax: 
--	 export ENVIRONMENT="production"
+-	 	export ENVIRONMENT="production"
 - Explanation: Makes variable available to child processes.
 
 -----------------------------------------------------------
@@ -49,7 +49,7 @@ All commands are written in general form and can be adapted inside scripts.
 ## 4. Command Substitution:
 - Command: $ (command)
 - Syntax: 
--	 current_date=$(date)
+-	 	current_date=$(date)
 - Explanation: Captures output of a command into a variable.
 
 ------------------------------------------------------------
@@ -57,22 +57,22 @@ All commands are written in general form and can be adapted inside scripts.
 ## 5. Input/Output Redirection:
 - Command: >
 - Syntax: 
--	 command > file.txt
+-	 	command > file.txt
 - Explanation: Redirect output (overwrite).
 
 - Command: >>
 - Syntax: 
--	 command >> file.txt
+-	 	command >> file.txt
 - Explanation: Redirect output (append).
 
 - Command: 2>
 - Syntax: 
--	 command 2> errors.txt
+-	 	command 2> errors.txt
 - Explanation: Redirect error output.
 
 - Command: |
 - Syntax: 
--	 ps aux | head
+-	 	ps aux | head
 - Explanation: Pipe output of one command into another.
 
 --------------------------------------------------------
@@ -95,10 +95,12 @@ All commands are written in general form and can be adapted inside scripts.
 
 ## 7. Loops:
 - Command: for
-- Syntax: 
--	  for user in user1 user2 user3; do
--		echo "$user"
--	  done
+- Syntax:
+<pre>
+for user in user1 user2 user3; do
+	echo "$user"
+done
+</pre>
 - Explanation: Iterates over a list.
 
 
