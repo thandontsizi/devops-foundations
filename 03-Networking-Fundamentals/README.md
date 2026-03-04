@@ -1,6 +1,6 @@
 # Networking Fundamentals:
 Networking is how computers communicate with each other.
-Instead of sending information in one large message, data is broken down into smaller pieces called packets. These packets are sent across a networkand are reassembled at the destination.
+Instead of sending information in one large message, data is broken down into smaller pieces called packets. These packets are sent across a network and are reassembled at the destination.
 
 ## Core Concepts:
 ### Network:
